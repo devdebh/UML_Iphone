@@ -1,0 +1,24 @@
+---
+config:
+  look: handDrawn
+  theme: neo-dark
+---
+classDiagram
+        Iphone --|> ReprodutorMusical
+        Iphone --|> LigacaoTelefonica
+        Iphone --|> NavegadorInternet
+        class ReprodutorMusical {
+            +String escolherMusica()
+            +String tocarMusica()
+            +String pausarMusica()
+        }
+        class LigacaoTelefonica {
+            +String fazerLigacao()
+            +String atenderLigacao()
+            +String iniciarCorreioDeVoz()
+        }
+        class NavegadorInternet {
+            +String exibirPagina()
+            +String adionarNovaAba()
+            +String atualizarPagina()
+        }
